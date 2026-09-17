@@ -1,6 +1,6 @@
 import streamlit as st
 import joblib
-model=joblib.("logisticregression.pkl")
+model=joblib.loadl("Logistic_regression_studnet_studyhors_model.pkl")
 st.title("Student Pass/Fail based on Study Hours")
 hours=st.number_input("Enter Study Hours",min_value=0.0,max_value=15.0,value=5.0)
 if st.button("Predict"):
